@@ -1,4 +1,4 @@
-setwd("~/Documents/Documents - gebruiker’s MacBook Pro/MSc Data Science/SSO/Assignment 1")
+
 bw=read.table('birthweight.txt', header=TRUE)
 weights = as.numeric(as.character(bw$birthweight))
 ###Ex 1 
