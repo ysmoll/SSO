@@ -37,6 +37,7 @@ binom.test(140,200,p=0.75, conf.level=0.8)
 ###Ex 3
 weather=read.table('weather.txt', header=TRUE)
 weather
+#summaries + qq-plot
 #lens
 length(weather$humidity)
 length(weather$temperature)
@@ -58,3 +59,11 @@ qqnorm(weather$humidity)
 qqnorm(weather$temperature)
 #correlation
 cor(weather$humidity,weather$temperature)
+
+#3c
+n2 = length(weather$temperature); n2
+s2 = sd(weather$temperature) ; s2
+m2 = mean(weather$temperature); m2
+t2 = qt(0.95,df=n2-1); t2
+ci2 = c(m2-t2*s2/sqrt(n2),m2+t2*s2/sqrt(n2)) ; ci2 
+
