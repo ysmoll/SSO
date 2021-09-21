@@ -34,6 +34,3 @@ binom.test(140,200,p=0.75, conf.level=0.99)
 binom.test(140,200,p=0.75, conf.level=0.8)
 
 
-
--
-
