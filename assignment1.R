@@ -34,3 +34,27 @@ binom.test(140,200,p=0.75, conf.level=0.99)
 binom.test(140,200,p=0.75, conf.level=0.8)
 
 
+###Ex 3
+weather=read.table('weather.txt', header=TRUE)
+weather
+#lens
+length(weather$humidity)
+length(weather$temperature)
+#means
+mean(weather$humidity)
+mean(weather$temperature)
+#sample stdv
+sd(weather$humidity)
+sd(weather$temperature)
+#histogram
+hist(weather$humidity)
+hist(weather$temperature)
+#scatterplot
+plot(weather)
+#boxplot
+boxplot(weather)
+#qq-plot
+qqnorm(weather$humidity)
+qqnorm(weather$temperature)
+#correlation
+cor(weather$humidity,weather$temperature)
