@@ -77,5 +77,11 @@ n3 = (za^2*s3^2)/e^2; n3
 austen = read.table('austen.txt', header=TRUE)
 austen
 
+
+# 4b
+z=chisq.test(austen[, c(1,3,2)]); z
+
+
+# 4c
 z=chisq.test(austen); z
 
