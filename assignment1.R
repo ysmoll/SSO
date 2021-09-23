@@ -72,3 +72,10 @@ za = qnorm(1-(0.05/2)); za
 s3 = sd(weather$humidity); s3
 e = 0.01; e
 n3 = (za^2*s3^2)/e^2; n3
+
+### Ex 4
+austen = read.table('austen.txt', header=TRUE)
+austen
+
+z=chisq.test(austen); z
+
