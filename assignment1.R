@@ -66,4 +66,9 @@ s2 = sd(weather$temperature) ; s2
 m2 = mean(weather$temperature); m2
 t2 = qt(0.95,df=n2-1); t2
 ci2 = c(m2-t2*s2/sqrt(n2),m2+t2*s2/sqrt(n2)) ; ci2 
-
+  
+#3d
+za = qnorm(1-(0.05/2)); za
+s3 = sd(weather$humidity); s3
+e = 0.01; e
+n3 = (za^2*s3^2)/e^2; n3
